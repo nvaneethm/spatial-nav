@@ -68,7 +68,6 @@ body {
   font-size: 18px;
 }
 
-
 .nested-grid {
   display: grid;
   grid-template-columns: repeat(2, 40px);
@@ -87,4 +86,22 @@ body {
   font-size: 14px;
 }
 
+.sidebar-focused {
+  border-color: yellow;
+  background: #888;
+}
 
+.topbar-focused {
+  border-color: yellow;
+  background: #888;
+}
+
+.focused {
+  border-color: blue;
+  background: #add8e6;
+}
+
+.nested-focused {
+  border-color: red;
+  background: #ffcccb;
+}

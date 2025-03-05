@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.topbar {
+  display: flex;
+  width: 600px;
+  background: #444;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.topbar-item {
+  padding: 10px;
+  background: gray;
+  width: 80px; /* Example fixed width for topbar items, adjust as needed */
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 400px;
+  background: #333;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar-item {
+  padding: 10px;
+  background: gray;
+  width: 80%;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-gap: 10px;
+  width: max-content;
+}
+
+.grid-item {
+  width: 120px;
+  height: 120px;
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid transparent;
+  font-size: 18px;
+}
+
+
+.nested-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 40px);
+  grid-gap: 5px;
+  margin-top: 5px;
+}
+
+.nested-item {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+

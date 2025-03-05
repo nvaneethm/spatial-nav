@@ -10,4 +10,12 @@ const config = {
   nestedCols: 2,
 };
 
+const state = {
+  currentState: "grid",
+  sidebarIndex: 0,
+  topbarIndex: 0,
+  gridIndex: 0,
+  nestedIndex: -1,
+};
+
 createGrid(config.totalItems, config.nestedRows, config.nestedCols, grid);

@@ -1,4 +1,8 @@
 import { createGrid } from "./Grid/index.js";
+import { updateFocus } from "./FocusManager/index.js";
+
+const sidebarItems = document.querySelectorAll(".sidebar-item");
+const topbarItems = document.querySelectorAll(".topbar-item");
 const grid = document.getElementById("grid");
 
 const config = {
@@ -19,3 +23,5 @@ const state = {
 };
 
 createGrid(config.totalItems, config.nestedRows, config.nestedCols, grid);
+
+updateFocus(state, { sidebarItems, topbarItems, grid });
